@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/consultorio_odontologico
-    username: postgres
-    password: postgres
+    url: jdbc:postgresql://${DB_URL}/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASS}
   jpa:
     show-sql: true
